@@ -1,14 +1,4 @@
-from pydantic import BaseModel
-from typing import Optional
-
-class Proyecto(BaseModel):
-    id: int
-    tipo: str
-    responsables: str
-    nombre: str
-    ubicacion: str
-    estado: str
-    descripcion: Optional[str]
+from models.models import *
 
 proyectos = {
     0: Proyecto(id=0, tipo="Residencial", responsables="Andres", nombre="Robles", ubicacion="Manizales", estado="Construcción", descripcion=""),
