@@ -1,7 +1,4 @@
-from typing import Union
-
-from fastapi import FastAPI, HTTPException
-
+from fastapi import FastAPI
 from routers import proyectos
 
 app = FastAPI()
