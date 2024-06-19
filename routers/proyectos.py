@@ -4,9 +4,9 @@ from fastapi import HTTPException
 
 router = APIRouter()
 
-@router.get("/")
+"""@router.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Hello": "World"}"""
 
 @router.get("/proyecto")
 def leer_Proyecto() -> dict[str, dict[int, Proyecto]]:
@@ -19,6 +19,17 @@ def proyecto_Id(id: int) -> Proyecto:
             status_code=404, detail=f"Proeycto con {id= } no existe."
         )
     return proyectos [id]
+
+@router.put("/proyecto")
+def modificar_Proyecto(proyecto: Proyecto) -> dict[str, Proyecto]:
+    if proyecto.id in proyectos:
+        proyectos[proyecto.id] = proyecto
+        return {"modificado": proyecto}
+    
+    raise HTTPException(
+            status_code=400, detail=f"Proyecto con id: {proyecto.id } no existe."
+        )
+    
 
 @router.post("/proyecto")
 def crear_Proyecto(proyecto: Proyecto) -> dict[str, Proyecto]:
