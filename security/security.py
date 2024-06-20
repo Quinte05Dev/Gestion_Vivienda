@@ -1,5 +1,8 @@
+# APIKeyHeader nos permite manejar la autenticación basada en claves API (API Keys).
 from fastapi.security.api_key import APIKeyHeader
+
 from fastapi import HTTPException, Security
+# HTTPException se usa para lanzar excepciones HTTP y Security se usa para implementar dependencias de seguridad en las  rutas.
 
 # Definimos la instancia de APIKeyHeader
 api_key_header = APIKeyHeader(name="X-API-KEY")
