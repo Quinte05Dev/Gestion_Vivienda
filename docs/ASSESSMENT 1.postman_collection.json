@@ -16,9 +16,10 @@
 						"value": "application/json"
 					},
 					{
-						"key": "X-API-KEY",
-						"value": "Assessment_aprobado!!!",
-						"type": "text"
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"url": {
