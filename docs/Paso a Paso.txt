@@ -1,0 +1,23 @@
+Requisitos:
+- Tener instalado Python en el equipo
+- Tener instalado Git bash
+- Tener instalado Visual Studio Code
+
+Pasos para correr el codigo de forma local
+
+1- Abrir Git Bash y Clonar en local el repositorio "https://github.com/Quinte05Dev/Gestion_Vivienda.git"
+2- Ejecutar los siguientes comandos para instalar el framework y las librerías necesarias para correr el proyecto:
+    pip install fastapi 
+    pip install "uvicorn[standard]"
+    pip install pytest
+    pip install httpx
+3- Ejecutar el siguiente comando para levantar el servidor local:
+    uvicorn main:app --reload
+4- Abrir en el navegador el siguiente enlace para visualizar el swagger:
+    http://127.0.0.1:8000/docs#/
+5- Importar en postman la colección ubicada en la carpeta docs.
+6- Probar las peticiones desde Postman.
+7- Probar las pruebas unitarias, en el terminal de Bash, ejecutar el siguiente comando:
+    pytest
+    De esta forma se ejecutaran las pruebas unitarias detalladas en el archivo test_proyectos.py ubicado en la carpeta test, deben correr 6 test.
+    
