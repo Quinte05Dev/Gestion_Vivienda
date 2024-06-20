@@ -1,0 +1,5 @@
+Ejecutar el siguiente comando en la terminal:
+fastapi dev main.py
+
+Abrir el siguiente enlace en el navegador
+http://127.0.0.1:8000/docs#/
