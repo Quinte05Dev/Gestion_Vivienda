@@ -99,7 +99,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"id\": 5,\r\n  \"tipo\": \"comercial\",\r\n  \"responsables\": \"Sandra\",\r\n  \"nombre\": \"Urapanes\",\r\n  \"ubicacion\": \"Cali\",\r\n  \"estado\": \"Terminada\",\r\n  \"descripcion\": \"250 mt2, piscina\"\r\n}"
+					"raw": "{\r\n  \"id\": 1,\r\n  \"tipo\": \"comercial\",\r\n  \"responsables\": \"Sandra\",\r\n  \"nombre\": \"Urapanes\",\r\n  \"ubicacion\": \"Cali\",\r\n  \"estado\": \"Terminada\",\r\n  \"descripcion\": \"250 mt2, piscina\"\r\n}"
 				},
 				"url": {
 					"raw": "http://127.0.0.1:8000/proyecto",
@@ -134,7 +134,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/proyecto/5",
+					"raw": "http://127.0.0.1:8000/proyecto/3",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -145,7 +145,7 @@
 					"port": "8000",
 					"path": [
 						"proyecto",
-						"5"
+						"3"
 					]
 				}
 			},

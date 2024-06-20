@@ -11,7 +11,7 @@ from security.security import *
 router = APIRouter()
 
 # Definimos una ruta GET para obtener todos los proyectos.
-@router.get("/proyecto", dependencies=[Depends(get_api_key)])
+@router.get("/proyecto")
 def leer_Proyecto() -> dict[str, dict[int, Proyecto]]:
     return {"proyecto": proyectos}
 
