@@ -5,7 +5,7 @@ Requisitos:
 
 Pasos para correr el codigo de forma local
 
-1- Abrir Git Bash y Clonar en local el repositorio "https://github.com/Quinte05Dev/Gestion_Vivienda.git"
+1- Abrir Git Bash y Clonar en local el repositorio "https://github.com/Quinte05Dev/Gestion_Vivienda.git" e ingresar a la carpeta Gestión Gestion_Vivienda desde la terminal
 2- Ejecutar los siguientes comandos para instalar el framework y las librerías necesarias para correr el proyecto:
     pip install fastapi 
     pip install "uvicorn[standard]"
@@ -20,4 +20,3 @@ Pasos para correr el codigo de forma local
 7- Probar las pruebas unitarias, en el terminal de Bash, ejecutar el siguiente comando:
     pytest
     De esta forma se ejecutaran las pruebas unitarias detalladas en el archivo test_proyectos.py ubicado en la carpeta test, deben correr 6 test.
-    

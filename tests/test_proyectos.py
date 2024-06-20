@@ -19,7 +19,7 @@ headers = {
 # Función de prueba para verificar que se puede leer la lista de proyectos.
 def test_leer_proyecto():
     # Hacemos una petición GET a la ruta /proyecto con los encabezados que incluyen el API-KEY.
-    response = client.get("/proyecto", headers=headers)
+    response = client.get("/proyecto")
     # Verificamos que el código de estado de la respuesta sea 200 (OK).
     assert response.status_code == 200
     # Verificamos que la respuesta JSON contenga el "proyecto".
